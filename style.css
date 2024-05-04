@@ -1,0 +1,136 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+
+}
+
+body {
+    background: rgba(4, 20, 83, 0.827);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before{
+    background-image: url("code.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.container{
+    width: 80%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 14px;
+    border: 3px solid rgba(14, 14, 41, 0.886);
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.49);
+    background-image: url("Ruido.png");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+   
+}
+.container__conteudo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%;
+
+}
+.container__informacao{
+    flex: 1;
+    padding: 3rem;
+}
+   
+.container__texto { 
+    margin: 12px; 
+    display: flex;
+    flex-direction: column;
+
+}
+.container__texto-azul{
+    color: rgb(38, 38, 206);
+    display: block;
+    text-shadow: rgb(0, 0, 0) 2px 5px;
+
+  
+}
+.container__campo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+.container__input{
+    width:130px;
+    height: 72px;
+    background-color: rgb(233, 230, 230);
+    border-radius: 16px;
+    color: rgb(0, 0, 0);
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+.container__botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+.container__botao{
+    border-radius: 16px;
+    background: rgb(11, 31, 214);
+    padding: 16px 24px;
+    font-size: 24px;
+    width: 100%;
+    font-weight: 700;
+    border-bottom:  10px;
+    color: rgb(255, 244, 244);
+    cursor: pointer;
+ 
+}
+.container__botao-desabilitado{
+    border-radius: 16px;
+    background: rgb(11, 31, 214);
+    padding: 16px 24px;
+    font-size: 24px;
+    width: 100%;
+    font-weight: 700;
+   border-bottom:  10px;
+    color: rgb(245, 239, 239);
+    cursor: pointer;
+ 
+
+    
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    padding: 4rem;
+    text-align: center;
+}
+.texto__paragrafo{
+    color:rgb(228, 239, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: black 2px 2px;
+}
